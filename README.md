@@ -81,6 +81,14 @@ const sampleObject = {};
 ```
 
 #### 배열
+- 콤마 다음에 공백을 추가.
+```js
+// bad
+const sampleArray = [1,2,3,4,5];
+
+// good
+const sampleArray = [1, 2, 3, 4, 5];
+```
 - 배열 요소 중 줄바꿈을 한다면 모든 요소의 줄바꿈을 함.
 ```js
 // bad
@@ -127,6 +135,19 @@ const sampleObject = {
 }
 ```
 #### 함수
+- 함수 명과 소괄호는 공백을 두지않는다.
+- 소괄호와 중괄호 사이에는 공백을 둔다.
+```js
+// bad
+function sampleFunction (){
+  // ...
+}
+
+// good
+function sampleFunction() {
+  // ...
+}
+```
 - 함수 내 return은 한번만 사용한다. (예외 처리로 빠져나갈 필요가 있는 경우는 제외)
 ```js
 // bad
@@ -349,8 +370,6 @@ if (a === b) {
   // ...
 }
 ```
-
-#### 공백
 - 키워드, 연산자와 다른 코드 사이에 공백.
 - 괄호의 시작후와 종료전에 공백X.
 ```js
@@ -368,12 +387,4 @@ if ( condition ) {
 if (condition) {
   // ...
 }
-```
-- 콤마 다음에 공백을 추가.
-```js
-// bad
-const sampleArray = [1,2,3,4,5];
-
-// good
-const sampleArray = [1, 2, 3, 4, 5];
 ```
