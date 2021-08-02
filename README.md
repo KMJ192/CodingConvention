@@ -17,16 +17,17 @@
 - 예약어를 사용하지 않음
 ```js
 // bad
-let import
-let export
-let switch
-let case
-let super
+let import;
+let export;
+let switch;
+let case;
+let super;
 ```
 - 범용적인 대문자 약어(ex: HTML, XML, URL)등 사용할 때는 대문자 그대로 사용 가능
 ```js
-let parseHTML
-let parseXML
+let sampleHTML;
+let sampleXML;
+let sampleYML;
 ```
 - 값이 변하지 않는 변수는 const를 사용, 값이 변하는 변수는 let을 사용.
 - 기본적으로 var를 사용하지 않도록 함.
